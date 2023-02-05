@@ -9,8 +9,26 @@ namespace LeetCodeCSharp
     {
         static void Main(string[] args)
         {
-            int[] arr = { 10, 2, 5, 3 };
-            int[] arr2 = { 3, 1, 7, 11 };
+
+            string[] words = { "bella", "label", "roller" };
+            string[] words2 = { "cool", "lock", "cook" };
+
+        
+
+
+            foreach (string word in FindCommonCharacters.CommonChars(words))
+            {
+                Console.Write(word);
+            }
+
+            foreach (string word in FindCommonCharacters.CommonChars(words2))
+            {
+                Console.Write(word);
+            }
+
+
+
+
 
         }
     }
