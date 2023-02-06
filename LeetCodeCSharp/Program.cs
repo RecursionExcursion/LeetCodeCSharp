@@ -9,13 +9,8 @@ namespace LeetCodeCSharp
     {
         static void Main(string[] args)
         {
-
-          
-
-
-        Console.WriteLine(DetermineColorOfAChessboardSquare.SquareIsWhite("a1"));
-        Console.WriteLine(DetermineColorOfAChessboardSquare.SquareIsWhite("h3"));
-        Console.WriteLine(DetermineColorOfAChessboardSquare.SquareIsWhite("c7"));
+        Console.WriteLine(DivideArrayIntoEqualPairs.DivideArray(new int[] {3,2,3,2,2,2}));
+        Console.WriteLine(DivideArrayIntoEqualPairs.DivideArray(new int[] {1,2,3,4}));
         }
     }
 }
