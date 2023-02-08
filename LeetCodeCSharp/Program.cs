@@ -9,8 +9,12 @@ namespace LeetCodeCSharp
     {
         static void Main(string[] args)
         {
-        Console.WriteLine(CountDaysSpentTogether.CountDaysTogether("08-15","08-18","08-16","08-19"));
-        Console.WriteLine(CountDaysSpentTogether.CountDaysTogether("10-01","10-31","11-01","12-31"));
+        Console.WriteLine(EliminationGame.LastRemaining(9));
+        Console.WriteLine(EliminationGame.LastRemaining(20));
+        Console.WriteLine(EliminationGame.LastRemaining(6));
+        Console.WriteLine(EliminationGame.LastRemaining(1));
+        Console.WriteLine(EliminationGame.LastRemaining(100000));
+        Console.WriteLine(EliminationGame.LastRemaining(100000000));
         }
     }
 }
