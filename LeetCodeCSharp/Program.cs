@@ -9,12 +9,10 @@ namespace LeetCodeCSharp
     {
         static void Main(string[] args)
         {
-        Console.WriteLine(EliminationGame.LastRemaining(9));
-        Console.WriteLine(EliminationGame.LastRemaining(20));
-        Console.WriteLine(EliminationGame.LastRemaining(6));
-        Console.WriteLine(EliminationGame.LastRemaining(1));
-        Console.WriteLine(EliminationGame.LastRemaining(100000));
-        Console.WriteLine(EliminationGame.LastRemaining(100000000));
+        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {0,1,2,2,4,4,1}));
+        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {4,4,4,9,2,4}));
+        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {29,47,21,41,13,37,25,7}));
+       
         }
     }
 }
