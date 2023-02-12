@@ -25,21 +25,16 @@ namespace LeetCodeCSharp.problems {
             int ans = -1;
             foreach (int key in dic.Keys) {
 
-                if(!dic.Keys.Contains(ans)) {
+                if(!dic.ContainsKey(ans)) {
                     ans = key;
                     continue;
                 }
 
-                ans = dic[key] >= dic[ans] ? dic[key] == dic[ans] ? key < ans ? key : ans : key : ans;
-
-
-                if (dic[key] >= dic[ans]) {
-                    if (dic[key] == dic[ans]) {
-                        ans = ans > key ? key : ans;
-                        continue;
-                    }
-                    ans = key;
-                }
+                ans = dic[key] >= dic[ans] ?
+                    dic[key] == dic[ans] ? 
+                        key < ans ? key : ans 
+                        : key :
+                    ans;
 
             }
             return ans;

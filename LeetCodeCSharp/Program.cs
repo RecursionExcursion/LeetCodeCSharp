@@ -3,16 +3,18 @@
 
 using LeetCodeCSharp.problems;
 
-namespace LeetCodeCSharp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {0,1,2,2,4,4,1}));
-        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {4,4,4,9,2,4}));
-        Console.WriteLine(MostFrequentEvenElement.MostFrequentEven(new int[] {29,47,21,41,13,37,25,7}));
-       
+namespace LeetCodeCSharp {
+    class Program {
+        static void Main(string[] args) {
+
+            Console.WriteLine(MaximumNumberOfWordsFoundInSentences.MostWordsFound(new string[] {
+                "alice and bob love leetcode", "i think so too", "this is great thanks very much"
+            }));
+
+            Console.WriteLine(MaximumNumberOfWordsFoundInSentences.MostWordsFound(new string[] {
+              "please wait", "continue to fight", "continue to win"
+            }));
+
         }
     }
 }
