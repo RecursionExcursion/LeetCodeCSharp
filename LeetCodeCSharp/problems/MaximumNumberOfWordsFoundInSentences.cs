@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeCSharp.problems {
     public class MaximumNumberOfWordsFoundInSentences {
-        public static int MostWordsFound(string[] sentences) => sentences.Select(s => s.Split(' ').Length).MaxBy(x);
+        public static int MostWordsFound(string[] sentences) => sentences.Select(s => s.Split(' ').Length).MaxBy(x => x);
 
         /*
         public static int MostWordsFound(string[] sentences) {

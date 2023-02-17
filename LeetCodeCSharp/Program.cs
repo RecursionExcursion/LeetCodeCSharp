@@ -7,13 +7,8 @@ namespace LeetCodeCSharp {
     class Program {
         static void Main(string[] args) {
 
-            Console.WriteLine(MaximumNumberOfWordsFoundInSentences.MostWordsFound(new string[] {
-                "alice and bob love leetcode", "i think so too", "this is great thanks very much"
-            }));
-
-            Console.WriteLine(MaximumNumberOfWordsFoundInSentences.MostWordsFound(new string[] {
-              "please wait", "continue to fight", "continue to win"
-            }));
+            Console.WriteLine(UncommonWordsFromTwoSentences.UncommonFromSentences("this apple is sweet", "this apple is sour"));
+            Console.WriteLine(UncommonWordsFromTwoSentences.UncommonFromSentences("apple apple", "banana"));
 
         }
     }
