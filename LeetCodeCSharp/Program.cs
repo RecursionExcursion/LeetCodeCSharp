@@ -3,12 +3,15 @@
 
 using LeetCodeCSharp.problems;
 
-namespace LeetCodeCSharp {
-    class Program {
-        static void Main(string[] args) {
+namespace LeetCodeCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-            Console.WriteLine(UncommonWordsFromTwoSentences.UncommonFromSentences("this apple is sweet", "this apple is sour"));
-            Console.WriteLine(UncommonWordsFromTwoSentences.UncommonFromSentences("apple apple", "banana"));
+            Console.WriteLine(FindTheDuplicateNumber.FindDuplicate(new int[] { 1, 3, 4, 2, 2 }));
+            Console.WriteLine(FindTheDuplicateNumber.FindDuplicate(new int[] { 3, 1, 3, 4, 2 }));
 
         }
     }
