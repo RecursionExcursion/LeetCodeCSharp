@@ -10,9 +10,9 @@ namespace LeetCodeCSharp
         static void Main(string[] args)
         {
 
-            Console.WriteLine(FindTheDuplicateNumber.FindDuplicate(new int[] { 1, 3, 4, 2, 2 }));
-            Console.WriteLine(FindTheDuplicateNumber.FindDuplicate(new int[] { 3, 1, 3, 4, 2 }));
-
+            Console.WriteLine(UniqueNumberOfOccurences.UniqueOccurrences(new int[] { 1, 2, 2, 1, 1, 3 }));
+            Console.WriteLine(UniqueNumberOfOccurences.UniqueOccurrences(new int[] { 1, 2 }));
+            Console.WriteLine(UniqueNumberOfOccurences.UniqueOccurrences(new int[] { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 }));
         }
     }
 }
