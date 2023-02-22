@@ -10,7 +10,7 @@ namespace LeetCodeCSharp.problems
     {
         public static bool UniqueOccurrences(int[] arr)
         {
-            Dictionary<int, int> intOccurences = new Dictionary<int, int>();
+            Dictionary<int, int> intOccurences = new();
 
             foreach (int i in arr)
             {
