@@ -5,10 +5,6 @@
         public int RomanToInt(string s)
         {
 
-            char[] charArry = s.ToCharArray();
-
-            Queue<char> queue = new Queue<char>(charArry);
-
             int returnValue = 0;
 
             Func<char, int> stringToInt = x =>
@@ -25,36 +21,35 @@
                     _ => 0,
                 };
             };
+           
+            Queue<int> queue = new();
 
-            Func<int> peekToInt = () => stringToInt(queue.Peek());
+            foreach (char c in s.ToCharArray())
+            { 
+                queue.Enqueue(stringToInt(c));
+            }
+
             Func<bool> queueIsNotEmpty = () => queue.Count > 0;
-
-            Func<int, int> doTheThing = (x) =>
-            {
-                return stringToInt(queue.Dequeue()) - (2 * x);
-            };
-
+            Func<int, int> adjustVal = (x) => queue.Dequeue() - (2 * x);
 
             while (queueIsNotEmpty())
             {
-                int currentInt = stringToInt(queue.Dequeue());
+                int currentInt = queue.Dequeue();
                 returnValue += currentInt;
-
 
                 if (queueIsNotEmpty())
                 {
-
-                    if (currentInt == 100 && (peekToInt() == 500 || peekToInt() == 1000))
+                    if (currentInt == 100 && (queue.Peek() == 500 || queue.Peek() == 1000))
                     {
-                        returnValue += doTheThing(100);
+                        returnValue += adjustVal(100);
                     }
-                    else if (currentInt == 10 && (peekToInt() == 50 || peekToInt() == 100))
+                    else if (currentInt == 10 && (queue.Peek() == 50 || queue.Peek() == 100))
                     {
-                        returnValue += doTheThing(10);
+                        returnValue += adjustVal(10);
                     }
-                    else if (currentInt == 1 && peekToInt() == 5)
+                    else if (currentInt == 1 && (queue.Peek() == 5 || queue.Peek() == 10))
                     {
-                        returnValue += doTheThing(1);
+                        returnValue += adjustVal(1);
                     }
                 }
             }

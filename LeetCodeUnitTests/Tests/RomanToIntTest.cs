@@ -1,9 +1,4 @@
 ﻿using LeetCodeCSharp.problems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCodeUnitTests.Tests
 {
@@ -20,9 +15,10 @@ namespace LeetCodeUnitTests.Tests
         [Test]
         public void RomanToInt()
         {
-            Assert.AreEqual(3, solution.RomanToInt("III"));
             Assert.AreEqual(58, solution.RomanToInt("LVIII"));
+            Assert.AreEqual(3, solution.RomanToInt("III"));
             Assert.AreEqual(1994, solution.RomanToInt("MCMXCIV"));
+            Assert.AreEqual(9, solution.RomanToInt("IX"));
 
         }
     }
