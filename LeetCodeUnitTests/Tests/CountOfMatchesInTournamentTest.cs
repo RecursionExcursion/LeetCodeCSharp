@@ -1,9 +1,4 @@
 ﻿using LeetCodeCSharp.problems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCodeUnitTests.Tests
 {
@@ -11,6 +6,7 @@ namespace LeetCodeUnitTests.Tests
     {
 
         private CountOfMatchesInTournament countOfMatches = new();
+
         [Test]
         public void NumberOfMatchesTest()
         {
